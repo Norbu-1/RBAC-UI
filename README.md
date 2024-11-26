@@ -14,8 +14,6 @@
 2. [🚀 Setup Instructions](#setup-instructions)
 3. [🛠️ Technologies Used](#technologies-used)
 4. [📖 Usage Guide](#usage-guide)
-5. [🤝 Contributing](#contributing)
-6. [📜 License](#license)
 
 ---
 
@@ -71,17 +69,17 @@ Ensure you have the following installed:
    cd rbac-interface
 2. **Install dependencies:**
 
-```bash
-npm install
+   ```bash
+   npm install
 
 3. **Start the development server:**
 
-```bash
-node server.js
+   ```bash
+   node server.js
 4. **Run the Code**
 
-```bash
-npm run dev
+   ```bash
+   npm run dev
 
 The app will be available at http://localhost:5173.
 ---
