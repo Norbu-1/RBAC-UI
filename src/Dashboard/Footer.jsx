@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const footer = () => {
   return (
     <footer className="w-full bg-gray-800 text-white py-8 mt-4 shadow-md">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
@@ -18,7 +18,6 @@ const Footer = () => {
           <a href="#" className="hover:text-gray-400 transition duration-300">Contact</a>
         </div>
 
-        {/* Social Media Links */}
         <div className="flex space-x-4">
           <a href="#" aria-label="Facebook" className="hover:text-gray-400 transition duration-300">
             <i className="fab fa-facebook-f"></i>
@@ -40,4 +39,4 @@ const Footer = () => {
   );
 }
 
-export default Footer;
+export default footer;
