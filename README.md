@@ -67,11 +67,58 @@ Ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/restaurant-management-system.git
+   git https://github.com/Norbu-1/RBAC-UI.git
    cd rbac-interface
+2. **Install dependencies:**
 
+```bash
+npm install
 
+3. **Start the development server:**
 
+```bash
+node server.js
+4. **Run the Code**
+
+```bash
+npm run dev
+
+The app will be available at http://localhost:5173.
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** React.js, Tailwind CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB  
+- **State Management:** React Hooks  
+- **Routing:** React Router  
+- **Icons:** React Icons  
+
+---
+
+## 📖 Usage Guide
+
+### 🔐 Login:  
+Access the system using the admin credentials.
+
+### 📊 Dashboard:  
+Navigate between modules (Menu, Orders, Inventory) using the sidebar.
+
+### 👥 User Roles:  
+Assign roles to control access to specific features.
+
+### 📋 Manage Menu:  
+Add new dishes, edit existing ones, or remove outdated items.
+
+### 📦 Monitor Orders:  
+View active and completed orders, and update their status.
+
+### 📦 Check Inventory:  
+Ensure stock levels are sufficient for daily operations.
+
+---
+## Thankyou
 
 # React + Vite
 
