@@ -9,7 +9,7 @@ import ReportsManagement from "../Report/ReportsManagement.jsx";
 import MainDashboard from "../Dashboard/DashboardManagement.jsx";
 import LoginModal from "./Login.jsx";
 import { FaUtensils, FaChartBar, FaClipboardList } from "react-icons/fa";
-const AdminDashboard = () => {
+const HomeDashboard = () => {
   const [logUser, setLogUser] = useState(null);
   const [onLogin, setLogin] = useState(false);
 
@@ -92,4 +92,4 @@ const AdminDashboard = () => {
   );
 };
 
-export default AdminDashboard;
+export default HomeDashboard;
