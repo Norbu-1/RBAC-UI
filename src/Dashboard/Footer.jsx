@@ -31,7 +31,6 @@ const footer = () => {
         </div>
       </div>
 
-      {/* Footer Bottom */}
       <div className="text-center text-sm mt-6">
         &copy; {new Date().getFullYear()} Restauro. All rights reserved.
       </div>
