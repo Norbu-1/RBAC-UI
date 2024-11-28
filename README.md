@@ -19,7 +19,7 @@
 
 ## 🔧 Features
 
-### 🖥️ Dashboard Features
+### 🖥️ Modules
 
 - **Dashboard:**  
   An overview of key metrics such as active orders, stock levels, and user activity.  
