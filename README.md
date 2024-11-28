@@ -125,6 +125,7 @@ The app will be available at http://localhost:5173.
 
 ### 🔐 **Login:**  
 Access the system by entering your assigned role and password. Different roles have unique access levels and permissions.
+> **Note:** You can enter any password for now to simulate login for various roles.
 
 ### 📊 **Dashboard:**  
 Navigate seamlessly between modules (Menu, Orders, Inventory) using the sidebar. The dashboard provides an overview tailored to the user's role.
