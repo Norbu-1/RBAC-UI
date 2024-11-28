@@ -42,7 +42,7 @@
   
 ### 🛠️ Role-Based Features  
 
- -👨‍💼 **Admin:**  
+ - 👨‍💼 **Admin:**  
     Access all modules: User Management, Menu Management, Order Management, Inventory Management, and Reports Management.  
     Assign and manage roles for different users.  
 
@@ -55,13 +55,13 @@
     Use **Order Management** to track incoming orders and mark items as prepared.  
     Monitor ingredient availability in **Inventory Management**.
 
-  👨‍💼 **Waiter:**  
+- 👨‍💼 **Waiter:**  
     Use **Order Management** to place and monitor customer orders.  
 
-  💰 **Cashier:**  
+- 💰 **Cashier:**  
     Generate detailed reports on transactions using **Reports Management**.
     
-  🏠 **Dashboard:** Access to all.
+- 🏠 **Dashboard:** Access to all.
   
 ### 🔐 Authentication & Security
 
