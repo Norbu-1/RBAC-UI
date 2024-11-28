@@ -115,7 +115,6 @@ The app will be available at http://localhost:5173.
 
 - **Frontend:** React.js, Tailwind CSS  
 - **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
 - **State Management:** React Hooks  
 - **Routing:** React Router  
 - **Icons:** React Icons  
@@ -124,23 +123,19 @@ The app will be available at http://localhost:5173.
 
 ## 📖 Usage Guide
 
-### 🔐 Login:  
-Access the system using the admin credentials.
+### 🔐 **Login:**  
+Access the system by entering your assigned role and password. Different roles have unique access levels and permissions.
 
-### 📊 Dashboard:  
-Navigate between modules (Menu, Orders, Inventory) using the sidebar.
+### 📊 **Dashboard:**  
+Navigate seamlessly between modules (Menu, Orders, Inventory) using the sidebar. The dashboard provides an overview tailored to the user's role.
 
-### 👥 User Roles:  
-Assign roles to control access to specific features.
-
-### 📋 Manage Menu:  
-Add new dishes, edit existing ones, or remove outdated items.
-
-### 📦 Monitor Orders:  
-View active and completed orders, and update their status.
-
-### 📦 Check Inventory:  
-Ensure stock levels are sufficient for daily operations.
+### 👥 **User Roles:**  
+Assign roles to control access to specific features. Each role has defined permissions:  
+- **Admin:** Full access to all modules.  
+- **Manager:** Manage menus, orders, inventory, and generate reports.  
+- **Chef:** View and update orders, and monitor inventory.  
+- **Waiter:** Place and track customer orders.  
+- **Cashier:** Access transaction reports and handle payments. 
 
 ---
 ## Thankyou
