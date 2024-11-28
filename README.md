@@ -4,7 +4,7 @@
 
 ## 📜 Project Overview
 
-**Restauro** is a comprehensive restaurant management system designed to streamline operations, enhance user experience, and simplify administrative tasks. It includes features for menu management, order tracking, inventory control, user role management, and reporting. This system leverages modern technologies to provide a robust, secure, and user-friendly interface for managing day-to-day restaurant activities.
+**Restauro** is a comprehensive restaurant management system designed to streamline operations, enhance user experience, and simplify administrative tasks. It includes features for menu management, order tracking, inventory control, user role management, and reporting. This system leverages modern technologies to provide a robust, secure, and user-friendly interface for managing restaurant activities.
 
 ---
 
@@ -19,8 +19,12 @@
 
 ## 🔧 Features
 
-### 🖥️ Admin Dashboard
+### 🖥️ Dashboard Features
 
+- **Dashboard:**  
+  An overview of key metrics such as active orders, stock levels, and user activity.  
+  Navigate seamlessly between different modules using the sidebar.
+  
 - **User Management:**  
   Add, update, and delete user accounts with role-based access.
   
@@ -28,14 +32,37 @@
   Create, edit, and organize dishes with ease.
 
 - **Order Management:**  
-  Track orders and update their status in real-time.
+  Track orders and update their status in real time.
 
 - **Inventory Management:**  
   Monitor and manage ingredient stock levels effectively.
 
 - **Reports Management:**  
   Generate detailed reports on sales, inventory usage, and user activity.
+  
+### 🛠️ Role-Based Features  
 
+ -👨‍💼 **Admin:**  
+    Access all modules: User Management, Menu Management, Order Management, Inventory Management, and Reports Management.  
+    Assign and manage roles for different users.  
+
+- 🧑‍🍳 **Manager:**  
+    Oversee **Menu Management**, **Order Management**, and **Inventory Management**.  
+    Generate and view reports for sales and inventory tracking.  
+
+- 👩‍🍳 **Chef:**  
+    Access **Menu Management** to check items and availability.  
+    Use **Order Management** to track incoming orders and mark items as prepared.  
+    Monitor ingredient availability in **Inventory Management**.
+
+  👨‍💼 **Waiter:**  
+    Use **Order Management** to place and monitor customer orders.  
+
+  💰 **Cashier:**  
+    Generate detailed reports on transactions using **Reports Management**.
+    
+  🏠 **Dashboard:** Access to all.
+  
 ### 🔐 Authentication & Security
 
 - **Secure Login:**  
