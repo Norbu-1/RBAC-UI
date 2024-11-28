@@ -108,7 +108,6 @@ Ensure you have the following installed:
    ```bash
    npm run dev
 
-The app will be available at http://localhost:5173.
 ---
 
 ## 🛠️ Technologies Used
