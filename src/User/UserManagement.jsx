@@ -4,13 +4,141 @@ import UserProfile from './user-profile';
 import AddNewUser from './new-user';
 
 const UserManage = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([{
+    id: 1,
+    name: "Alice Johnson",
+    role: "Admin",
+    email: "alice.johnson@example.com",
+    status: "Active",
+    lastLogin: "2024-01-10T14:23:00Z",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxzJjzxPGbFTU8NQjZxGxRSltwfSvRd2x9NxUr5XG872AL99VfW8z4poKC8DevT7gE3k&usqp=CAU",
+    bio: {
+      age: 30,
+      phone: "+1234567890",
+      dateOfJoining: "2020-01-01",
+    },
+    address: {
+      state: "California",
+      pincode: "90001",
+      area: "Downtown LA",
+      buildingHouse: "Apt 101",
+    },
+    qualifications: [
+      "Bachelor's in Computer Science",
+      "Certified Project Manager",
+    ],
+    skills: ["Project Management", "Team Leadership", "Agile Methodologies"],
+    experience: [
+      "3 years as Product Manager at XYZ Corp",
+      "2 years as Team Lead at DEF Inc",
+    ],
+    languagesSpoken: ["English", "Spanish"],
+    hobbies: ["Hiking", "Reading", "Cooking"],
+  },
+  {
+    id: 2,
+    name: "Michael Smith",
+    role: "Manager",
+    email: "michael.smith@example.com",
+    status: "Active",
+    lastLogin: "2024-01-09T09:15:00Z",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6zq21NVsOxQs4PL4rJU30aiCXEkVrwB-Y19RYowqhUGklgM3SNfj6e-L1UU3mfuyByM&usqp=CAU",
+    bio: {
+      age: 35,
+      phone: "+1234567891",
+      dateOfJoining: "2019-05-15",
+    },
+    address: {
+      state: "New York",
+      pincode: "10001",
+      area: "Manhattan",
+      buildingHouse: "Apt 202",
+    },
+    qualifications: ["MBA from ABC University"],
+    skills: ["Leadership", "Strategic Planning", "Financial Analysis"],
+    experience: [
+      "5 years as Operations Manager at GHI Corp",
+      "3 years as Business Analyst at JKL Inc",
+    ],
+    languagesSpoken: ["English", "French"],
+    hobbies: ["Traveling", "Photography"],
+  },
+  {
+    id: 3,
+    name: "Sanjeev Kapoor",
+    role: "Chef",
+    email: "sanjeev.kapoor@example.com",
+    status: "Active",
+    lastLogin: "2024-01-08T11:45:00Z",
+    image:
+      "https://img.freepik.com/premium-vector/chef-profile-silhouette_951778-32903.jpg",
+    bio: {
+      age: 45,
+      phone: "+1234567892",
+      dateOfJoining: "2017-02-25",
+    },
+    address: {
+      state: "Texas",
+      pincode: "75001",
+      area: "Downtown Dallas",
+      buildingHouse: "House No. 123",
+    },
+    qualifications: [
+      "Culinary Arts Degree from ABC University",
+      "Certified Pastry Chef",
+    ],
+    skills: [
+      "Advanced baking techniques",
+      "Menu planning and development",
+      "Food safety and sanitation",
+    ],
+    experience: [
+      "5 years as Sous Chef at XYZ Restaurant",
+      "2 years as Pastry Chef at DEF Bakery",
+    ],
+    languagesSpoken: ["English", "Hindi"],
+    hobbies: ["Traveling", "Reading culinary books", "Painting"],
+  },
+  {
+    id: 4,
+    name: "Liam Davis",
+    role: "Waiter",
+    email: "liam.davis@example.com",
+    status: "Active",
+    lastLogin: "2024-01-10T12:30:00Z",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4H_KyQH7TFptZ2dmO9ufQHL2vq0Uhh1Fhxg&s",
+    bio: {
+      age: 28,
+      phone: "+1234567893",
+      dateOfJoining: "2018-08-01",
+    },
+    address: {
+      state: "Florida",
+      pincode: "33101",
+      area: "Miami Beach",
+      buildingHouse: "Apt 305",
+    },
+    qualifications: ["Hospitality Management Degree from XYZ University"],
+    skills: ["Customer service", "Order accuracy", "Conflict resolution"],
+    experience: [
+      "3 years as Waiter at ABC Restaurant",
+      "2 years as Barista at DEF Cafe",
+    ],
+    languagesSpoken: ["English", "Portuguese"],
+    hobbies: ["Surfing", "Cycling"],
+  },
+  ]);
   const [selectedUser, setSelectedUser] = useState(null);
   const [showPopup,setPopup]=useState(false);
   const [userToDelete, setUserToDelete] = useState(null);
-  
+  const API_URL = import.meta.env.VITE_API_URL;
+
+
   useEffect(() => {
-    axios.get('http://localhost:5000/users')
+    axios.get(`${API_URL}/users`)
       .then(response => setUsers(response.data))
       .catch(error => console.error(error));
   }, []);
@@ -21,7 +149,7 @@ const UserManage = () => {
   };
 
   const handleUpdate = (updatedUser) => {
-    axios.put(`http://localhost:5000/users/${updatedUser.id}`, updatedUser)
+    axios.put(`${API_URL}/users/${updatedUser.id}`, updatedUser)
       .then(response => {
         setUsers(users.map(user => user.id === updatedUser.id ? response.data : user));
         setSelectedUser(response.data);
@@ -34,15 +162,15 @@ const UserManage = () => {
      setPopup(e);
    
   };
-  const confirmDelete=()=>{
-    axios.delete(`http://localhost:5000/users/${userToDelete}`)
-    .then(() => {
-      setUsers(users.filter(user => user.id !== userToDelete));
-      setSelectedUser(null);
-      setPopup(false);
-    })
-    .catch(error => console.error(error));
-  }
+  const confirmDelete = () => {
+    axios.delete(`${API_URL}/users/${userToDelete}`)
+      .then(() => {
+        setUsers(users.filter(user => user.id !== userToDelete));
+        setSelectedUser(null);
+        setPopup(false);
+      })
+      .catch(error => console.error(error));
+  };
  const cancelDelete=()=>{
   setPopup(false);
  }

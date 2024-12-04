@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from "../../public/icon.png"
+import image from "../Assets/icon.png"
 const Navbar = () => {
  
 

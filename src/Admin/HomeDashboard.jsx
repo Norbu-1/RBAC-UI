@@ -23,10 +23,7 @@ const HomeDashboard = () => {
       <div className="w-full h-full pt-20">
         {!onLogin ? (
           <div className="bg-white min-h-screen">
-            <div
-              className="relative h-[500px] bg-cover bg-center"
-              style={{ backgroundImage: "url(../../public/bg.jpg)" }}
-            >
+            <div className="relative h-[500px] bg-cover bg-center bg-custom-image">
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6">
                 <h1 className="text-5xl font-bold leading-tight">
                   Welcome to Restauro
