@@ -105,13 +105,6 @@ const LoginModal = ({ onClose, logdata }) => {
             Login
           </button>
         </form>
-
-        <button
-          onClick={onClose}
-          className="absolute top-2 right-2 text-gray-600 hover:text-gray-800 text-xl"
-        >
-          &times;
-        </button>
       </div>
     </div>
   );
